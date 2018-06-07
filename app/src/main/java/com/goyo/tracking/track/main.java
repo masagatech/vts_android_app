@@ -1422,6 +1422,7 @@ public class main extends RootActivity implements
         for (Marker m : mrkers) {
             if (m != null) {
                 isicons = true;
+                //d\ad\\\
                 builder.include(m.getPosition());
             }
         }
