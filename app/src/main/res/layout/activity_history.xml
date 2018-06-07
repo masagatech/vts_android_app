@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+
+    tools:context="com.goyo.tracking.track.forms.history">
+    <!--<android.support.v7.widget.Toolbar-->
+    <!--android:id="@+id/toolbar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="?attr/actionBarSize"-->
+    <!--android:background="?attr/colorPrimary"-->
+    <!--android:elevation="4dp"-->
+    <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+    <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />-->
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.goyo.tracking.track.forms.history" />
+
+    <RelativeLayout
+
+        android:id="@+id/infoTopPanel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="top"
+        android:background="#a8000000">
+
+        <RelativeLayout
+
+            android:id="@+id/unread_messapanel_1"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/unread_messages_wrapper"
+            android:layout_marginTop="4dp"
+            android:gravity="right">
+
+
+            <TextView
+                android:id="@+id/avg"
+                android:layout_width="100dp"
+
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="fill_vertical|center_horizontal"
+                android:text="Avg Speed"
+                android:textColor="@color/about_twitter_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtAvgSpeed"
+                android:layout_width="wrap_content"
+
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/avg"
+                android:gravity="right|fill_vertical"
+                android:text="0 km/h"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txttraveltime"
+                android:layout_width="80dp"
+
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="fill_vertical|center_horizontal"
+                android:text="00:00:00"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:layout_toLeftOf="@+id/txttraveltime"
+                android:gravity="right|fill_vertical"
+                android:text="Travel Time"
+                android:textColor="@color/sts_wl"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/unread_messages_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:gravity="right">
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="100dp"
+
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="false"
+                android:layout_toLeftOf="@+id/txtDistance"
+                android:gravity="fill_vertical|center_horizontal"
+                android:text="Distance"
+                android:textColor="@color/sts_ol"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="40dp"
+
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@+id/textView4"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:gravity="fill_vertical|center_horizontal"
+                android:text="km"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/txtDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/textView"
+                android:gravity="right|fill_vertical"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="100dp"
+
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="fill_vertical|center_horizontal"
+                android:text="Max Speed"
+                android:textColor="@color/stop"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtMaxSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView3"
+                android:gravity="right|fill_vertical"
+                android:text="0 km/h"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/compactcalendar_view"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:visibility="gone"
+        app:compactCalendarBackgroundColor="#51d2e9"
+        app:compactCalendarCurrentDayBackgroundColor="#1ca5b7"
+        app:compactCalendarCurrentDayIndicatorStyle="fill_large_indicator"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="#5fafbd"
+        app:compactCalendarEventIndicatorStyle="small_indicator"
+        app:compactCalendarOtherMonthDaysTextColor="#534c4c"
+        app:compactCalendarShouldSelectFirstDayOfMonthOnScroll="true"
+        app:compactCalendarTargetHeight="250dp"
+        app:compactCalendarTextColor="#fff"
+        app:compactCalendarTextSize="12sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="10dp"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <ListView
+            android:id="@+id/lst_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:listSelector="@android:color/holo_blue_light" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

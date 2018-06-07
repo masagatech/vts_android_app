@@ -1,0 +1,118 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'realm-android'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.fabric.io/public' }
+    google()
+}
+
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+    defaultConfig {
+        applicationId "com.goyo.tracking.tracking"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 17
+        versionName "2.0.0.2"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi-v7a", "x86", "arm64-v8a"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+//    splits {
+//        abi {
+//            enable true
+//            reset()
+//            include "mips", "x86", "x86_64", "arm64-v8a", "armeabi-v7a"
+//            universalApk false
+//        }
+//    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    //Optional: see how to use the utility.
+
+    //Optional: see how to use the utility.
+
+    repositories {
+
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+
+
+
+
+
+
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.koushikdutta.ion:ion:2.+'
+    implementation 'com.jakewharton:butterknife:8.5.1'
+    implementation('com.github.nkzawa:socket.io-client:0.3.0') {
+        exclude group: 'org.json', module: 'json'
+    }
+    implementation 'com.google.maps.android:android-maps-utils:0.4.+'
+    implementation 'com.sothree.slidinguppanel:library:3.3.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.google.android.gms:play-services-maps:12.0.1'
+    implementation 'com.github.medyo:android-about-page:1.2.1'
+    implementation 'com.github.sundeepk:compact-calendar-view:2.0.2.2'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    implementation 'net.danlew:android.joda:2.9.9.1'
+    implementation 'com.borax12.materialdaterangepicker:library:1.9'
+    implementation 'com.flipboard:bottomsheet-core:1.5.3'
+    implementation 'com.google.firebase:firebase-core:12.0.1'
+    implementation 'com.google.firebase:firebase-messaging:12.0.1'
+
+    //
+
+    implementation 'org.osmdroid:osmdroid-android:6.0.1'
+    implementation 'io.realm:android-adapters:2.1.1'
+
+    testImplementation 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.0@aar') {
+        transitive = true;
+    }
+
+}
+apply plugin: 'com.google.gms.google-services'

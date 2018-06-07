@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="2dp"
+    android:layout_marginTop="2dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <TextView
+        android:id="@+id/txtVhno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="First"
+        android:textColor="@color/about_instagram_color"
+        android:textSize="15sp"></TextView>
+
+    <TextView
+        android:id="@+id/txtfrmdt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:elevation="1dp"
+        android:gravity="center"
+        android:text="Second"
+        android:textSize="13sp"></TextView>
+
+    <TextView
+        android:id="@+id/txttodt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Third"
+        android:textSize="13sp"></TextView>
+
+    <TextView
+        android:id="@+id/txtmileage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="Fourth"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"></TextView>
+</LinearLayout>

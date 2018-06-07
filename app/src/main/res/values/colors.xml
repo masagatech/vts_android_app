@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- CHAT COLORS -->
+    <color name="rsc_chat_row_circle">#09D261</color>
+    <color name="rsc_chat_row_header">#000</color>
+    <color name="rsc_chat_row_subheader1">#4c4c4c</color>
+    <color name="rsc_chat_row_subheader2">#e0a025</color>
+
+    <color name="rsc_item_border">#cccccc</color>
+    <color name="rsc_background">#e6e6e6</color>
+
+    <color name="action_bar">#ff0d0d0d</color>
+    <color name="white">#ffffff</color>
+    <color name="off_white">#99ffffff</color>
+
+    <color name="sts_of">#64ff0000</color>
+    <color name="sts_ol">#c800ff00</color>
+    <color name="sts_wl">#ddff9100</color>
+
+    //VTS colors main panel board single tracking
+    <color name="l1_1_color">#64a11b1b</color>
+    <color name="l1_2_color">#5b0000</color>
+    <color name="l1_border_1_color">#647e7e7e</color>
+    <color name="l1_border_2_color">#b9b9b9</color>
+
+    //VTS colors main panel board single tracking
+    <color name="v1_1_color">#64d7d7d7</color>
+    <color name="v1_2_color">#f5efef</color>
+    <color name="v1_border_1_color">#647e7e7e</color>
+    <color name="v1_border_2_color">#b9b9b9</color>
+
+    <color name="orange_light">#ffffbb33</color>
+
+    <color name="driving">#1f91f3</color>
+    <color name="stop">#ff5050</color>
+    <color name="colorHolo">#ffff4444</color>
+
+    <color name="trasperGray">#a8545454</color>
+    <color name="colordisable">#6b6b6b</color>
+</resources>

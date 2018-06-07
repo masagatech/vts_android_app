@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dim_chat_row_size">60dip</dimen>
+    <dimen name="dim_chat_row_thumbnail_size">40dip</dimen>
+    <dimen name="dim_chat_row_unread_message_size">20dip</dimen>
+</resources>

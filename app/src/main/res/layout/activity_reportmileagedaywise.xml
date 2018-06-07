@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.goyo.tracking.track.forms.reportmilege">
+
+    <LinearLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="right">
+
+        <Switch
+            android:id="@+id/swtchClubdtwise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLUB"
+            android:textColor="@color/about_background_color"
+            android:textOff="Club"
+            android:textOn="Date Wise"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/txtVhno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Vehicle No"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtfrmdt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:text="From Date"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txttodt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="To Date"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtmileage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Mile(km)"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lstMileage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"></ListView>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        android:visibility="gone"/>
+</LinearLayout>

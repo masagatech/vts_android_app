@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:enabled="false"
+    android:orientation="horizontal"
+    >
+
+    <Button
+        android:id="@+id/action_bar_all"
+        style="@style/ActionBarButtonOffWhite"
+        android:layout_weight="1"
+        android:textColor="#3e92fd" />
+
+    <Button
+        android:id="@+id/action_bar_online"
+        android:layout_weight="1"
+        android:textColor="#47d600"
+        style="@style/ActionBarButtonOffWhite" />
+
+    <Button
+        android:id="@+id/action_bar_offline"
+        android:layout_weight="1"
+        android:textColor="#ef745f"
+        style="@style/ActionBarButtonOffWhite" />
+
+    <Button
+        android:id="@+id/action_bar_moving"
+        android:layout_weight="1"
+        android:textColor="#fdc41d"
+        style="@style/ActionBarButtonOffWhite" />
+
+</LinearLayout>
