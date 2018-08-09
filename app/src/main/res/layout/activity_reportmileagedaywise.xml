@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
 
-    tools:context="com.goyo.tracking.track.forms.reportmilege">
+    tools:context="com.goyo.tracking.tracking.forms.reportmilege">
 
     <LinearLayout
         android:id="@+id/relativeLayout1"

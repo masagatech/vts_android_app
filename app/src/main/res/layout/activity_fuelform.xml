@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_grey_300"
+    tools:context=".forms.addfuelentry">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:text="Select Vehicle"
+                android:textSize="11sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autocmpVehicle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:text="Enter Odometer Reading"
+                android:textSize="11sp" />
+
+            <EditText
+                android:id="@+id/edtodometer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="15" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:text="Date"
+                android:textSize="11sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="date" />
+
+                <ImageButton
+                    android:id="@+id/Date"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/black_button"
+                    android:src="@drawable/ic_calender"
+                    android:text="SCAN" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtlabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:text="Fuel Type"
+                android:textSize="11sp" />
+
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/about_github_color"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblPriceuom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="Price/Liter (Rs)"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/lblUOM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="Liter"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="Amount (Rs)"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtPricePerLtr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/edtLiter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/edtAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:text="Remark"
+                android:textSize="11sp" />
+
+            <EditText
+                android:id="@+id/edtRemark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:maxLength="300" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:text="Click on image to add/change"
+                android:textSize="11sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imgImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/black_button"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/defaultimagesicon"
+                    android:text="SCAN" />
+
+                <ImageButton
+                    android:id="@+id/btnPickImage"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/pickimages"
+                    android:text="SCAN" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

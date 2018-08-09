@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/imgVehicle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.1"
+        android:padding="5dp"
+        app:srcCompat="@drawable/vhico_car_yelow" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imgVehicle"
+        android:layout_weight="1"
+        android:paddingLeft="5dp"
+        android:text="MH 04 CH 4353"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtTitle"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/imgVehicle"
+        android:paddingLeft="5dp"
+        android:text="TextView" />
+</RelativeLayout>

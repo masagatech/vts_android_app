@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/t"
+    android:background="@android:color/background_dark"
+    android:padding="0dp"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.goyo.tracking.track.initials.login">
+    tools:context="com.goyo.tracking.tracking.initials.login">
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:src="@drawable/backgroubd" />
 
     <RelativeLayout
         android:id="@+id/userPassLayout"
@@ -16,22 +25,23 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageLayout"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@android:drawable/screen_background_light_transparent">
+        android:layout_marginRight="10dp">
 
         <EditText
             android:id="@+id/edtUserName"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
             android:layout_toRightOf="@+id/username_ico"
-            android:background="@drawable/loginedttext"
+            android:background="@color/trasperGray"
             android:drawablePadding="5dp"
             android:fontFamily="sans-serif-light"
             android:hint="@string/login_usrnamehint"
+            android:paddingLeft="5dp"
             android:singleLine="true"
+            android:textColor="@color/white"
             android:textColorHint="#CACACA"
             android:textSize="15dp">
 
@@ -42,7 +52,9 @@
             android:id="@+id/username_ico"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:drawable/screen_background_light_transparent"
             android:padding="3dp"
             android:src="@drawable/ic_action_name" />
 
@@ -51,7 +63,10 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_below="@+id/edtUserName"
+            android:layout_marginLeft="5dp"
             android:layout_marginTop="20dp"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:contentDescription="TODO"
             android:padding="3dp"
             android:src="@drawable/ic_action_pwd" />
 
@@ -61,15 +76,17 @@
             android:layout_height="40dp"
             android:layout_below="@+id/edtUserName"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginRight="5dp"
             android:layout_marginTop="20dp"
             android:layout_toRightOf="@+id/password_icon"
-            android:background="@drawable/loginedttext"
+            android:background="@color/trasperGray"
             android:fontFamily="sans-serif-light"
             android:hint="@string/login_passwordhint"
             android:imeOptions="actionDone"
             android:inputType="textPassword"
+            android:paddingLeft="5dp"
             android:singleLine="true"
+            android:textColor="@color/white"
             android:textColorHint="#CACACA"
             android:textSize="15dp" />
 
@@ -83,23 +100,25 @@
             android:layout_marginTop="5dp"
             android:textColor="#CACACA"
             android:textSize="15sp"
-            android:visibility="invisible" />
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:layout_below="@+id/textView1"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:background="@color/orange_light"
             android:fontFamily="sans-serif-light"
             android:text="@string/login_signin"
             android:textColor="#000"
-            android:textSize="20dp" />
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
     </RelativeLayout>
 
 
@@ -108,11 +127,12 @@
         android:id="@+id/imageLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:layout_marginTop="50dp"
+        android:addStatesFromChildren="false"
         android:background="@android:drawable/screen_background_light_transparent"
         android:paddingBottom="10dp"
         android:paddingTop="10dp">
@@ -121,12 +141,60 @@
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="wrap_content"
-            android:layout_height="130dp"
+            android:layout_height="100dp"
             android:layout_alignParentTop="true"
-            android:paddingBottom="10dp"
-            android:src="@drawable/goyologo500"
+            android:layout_centerHorizontal="true"
 
-            />
+            android:paddingBottom="10dp"
+            android:src="@drawable/goyologo500" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp">
+
+        <com.shaishavgandhi.loginbuttons.GoogleButton
+            android:id="@+id/btnGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="Sign in with Google"
+            android:textColor="#000"
+            app:iconSize="30dp"
+            app:transparentBackground="false" />
+
+
+        <com.shaishavgandhi.loginbuttons.FacebookButton
+            android:id="@+id/btnFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@+id/btnGoogle"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+
+            android:text="Sign in with Facebook"
+            app:iconSize="30dp"
+            app:transparentBackground="false" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/btnFacebook_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnGoogle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" />
+
+
     </RelativeLayout>
 
 </RelativeLayout>

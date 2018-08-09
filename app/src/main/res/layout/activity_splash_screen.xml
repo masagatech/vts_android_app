@@ -3,14 +3,21 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/t">
+    android:background="@android:color/background_dark">
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="false"
+        android:src="@drawable/backgroubd" />
+
 
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_margin="50dp"
         android:background="@android:drawable/screen_background_light_transparent"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
@@ -22,18 +29,17 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/imageView1"
-        android:layout_alignLeft="@+id/imageView1"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/imageView1"
+        android:layout_alignParentBottom="false"
         android:layout_alignStart="@+id/imageView1"
-        android:layout_marginBottom="143dp"
+        android:layout_below="@+id/imageView1"
         android:allowUndo="false"
         android:background="@android:drawable/screen_background_light_transparent"
         android:gravity="center_horizontal"
+        android:paddingTop="10dp"
         android:text="Vehicle Tracking"
         android:textAllCaps="true"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#447d80" />
+        android:textColor="@android:color/black" />
 
     <TextView
         android:id="@+id/txtVersionNo"
@@ -48,5 +54,6 @@
         android:text="Small Text"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textSize="15dp"
-        android:textStyle="italic" />
+        android:textStyle="italic"
+        android:visibility="gone" />
 </RelativeLayout>

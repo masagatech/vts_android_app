@@ -17,4 +17,12 @@
     <dimen name="slide_title">30dp</dimen>
     <dimen name="slide_desc">16dp</dimen>
     <dimen name="desc_padding">40dp</dimen>
+    <dimen name="margin_et">20dp</dimen>
+    <dimen name="actionbar_text">20dp</dimen>
+    <dimen name="et_text">14dp</dimen>
+    <dimen name="margin_top">16dp</dimen>
+    <dimen name="margin_button">20dp</dimen>
+    <dimen name="margin_bottom">16dp</dimen>
+
+    <dimen name="layout_margin">16dp</dimen>
 </resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8e8e8">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:id="@+id/lstItem"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtColor"
+            android:background="#18b400" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textSize="20sp"
+                android:singleLine="true"
+                android:layout_marginTop="0dp"
+                android:text="Large Text"
+                android:textColor="#000000"
+                android:layout_toLeftOf="@+id/txtIcon"
+                android:layout_toStartOf="@+id/txtIcon" />
+
+            <TextView
+                android:id="@+id/txtsubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTitle"
+                android:layout_marginTop="2dp"
+                android:text="Sub Title"
+                android:textColor="#000000"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/txtType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtsubtitle"
+                android:layout_marginTop="2dp"
+                android:text="Type"
+                android:textColor="#000000"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/txtIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#000000"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/txtStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/txtIcon"
+                android:textAllCaps="true"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:textColor="#ff0000"
+                android:text="status" />
+
+            <TextView
+                android:id="@+id/txtHidId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:textColor="#000000"
+                android:visibility="gone"
+                android:layout_alignTop="@+id/txtStatus"
+                android:layout_toLeftOf="@+id/txtStatus"
+                android:layout_toStartOf="@+id/txtStatus" />
+
+            <TextView
+                android:id="@+id/txtFromToTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" From To Time"
+                android:textColor="#000000"
+                android:textSize="11dp"
+                android:layout_toRightOf="@+id/txtType"
+                android:layout_alignBottom="@+id/txtType"
+                android:layout_marginLeft="150px" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

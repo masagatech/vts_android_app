@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_grey_300"
+    tools:context=".forms.addvehicles">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:text="IMEI"
+                android:textSize="11sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtImei"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="15" />
+
+                <Button
+                    android:id="@+id/btnScanBarcode"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="BARCODE"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="SIM Number"
+                android:textSize="11sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtSimNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+                <Button
+                    android:id="@+id/btnServer"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="SET SERVER"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Vehicle Display Name (Bus 1)"
+                android:textSize="11sp" />
+
+            <EditText
+                android:id="@+id/edtVhName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Registration Number (MH 04 CH 4444)"
+                android:textSize="11sp" />
+
+            <EditText
+                android:id="@+id/edtRegNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Vehicle Type"
+                android:textSize="11sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/about_github_color"></View>
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Speed Alert (Above km/h)- 0 value will disabled alert"
+                android:textSize="11sp" />
+
+            <EditText
+                android:id="@+id/edtSpdAlert"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGrey"
+                android:paddingLeft="5dp"
+                android:text="Expiration"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="PUC Expiry Date"
+                android:textSize="11sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtPucEpireDt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:inputType="date" />
+
+                <ImageButton
+                    android:id="@+id/btnPucCalender"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/black_button"
+                    android:src="@drawable/ic_calender"
+                    android:text="SCAN" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Insurance Expiry Date"
+                android:textSize="11sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtInsuExpireDt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:inputType="date" />
+
+                <ImageButton
+                    android:id="@+id/btnInsuranceCalender"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/black_button"
+                    android:src="@drawable/ic_calender"
+                    android:text="SCAN" />
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGrey"
+                android:paddingLeft="5dp"
+                android:text="Functions"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="D1 Function"
+                android:textSize="11sp" />
+
+            <Spinner
+                android:id="@+id/spnrD1Selection"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/about_github_color"></View>
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGrey"
+                android:paddingLeft="5dp"
+                android:text="Vehicle Other Info"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Chasis No"
+                android:textSize="11sp" />
+
+            <EditText
+                android:id="@+id/edtChasisNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Model"
+                android:textSize="11sp" />
+
+            <EditText
+                android:id="@+id/edtModel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Make"
+                android:textSize="11sp" />
+
+            <EditText
+                android:id="@+id/edtMake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Capacity (No. of Seats) "
+                android:textSize="11sp" />
+
+            <EditText
+                android:id="@+id/edtCapacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Number Of Tyres"
+                android:textSize="11sp" />
+
+            <EditText
+                android:id="@+id/edtNoOfTyres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:enabled="true"
+                android:text="Save" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

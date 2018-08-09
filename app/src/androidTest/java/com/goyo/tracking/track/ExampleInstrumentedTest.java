@@ -1,4 +1,4 @@
-package com.goyo.tracking.track;
+package com.goyo.tracking.tracking;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

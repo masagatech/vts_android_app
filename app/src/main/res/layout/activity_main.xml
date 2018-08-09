@@ -51,7 +51,7 @@
                 android:layout_height="match_parent"
                 android:layout_below="@+id/butonsholder"
                 android:layout_marginBottom="138px"
-                tools:context="com.goyo.tracking.track.main" />
+                tools:context="com.goyo.tracking.tracking.main" />
 
 
 
@@ -82,7 +82,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/txtSpeed"
                         android:layout_toRightOf="@+id/imgDotsts1"
+                        android:singleLine="true"
                         android:text="-----------------"
                         android:textAlignment="center"
                         android:textColor="@color/white" />

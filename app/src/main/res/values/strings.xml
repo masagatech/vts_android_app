@@ -5,8 +5,30 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="login_passwordhint">Password</string>
     <string name="login_usrnamehint">User Code/Mobile No.</string>
-    <string name="login_signin">Sign In</string>
+    <string name="login_signin">SIGN IN WITH GOYO</string>
     <string name="live_tracking">Live Tracking</string>
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
+    <string name="facebook_app_id">1961124983906777</string>
+    <string name="fb_login_protocol_scheme">fb1961124983906777</string>
+
+    <string name="button_signup_submit">REGISTER</string>
+    <string name="hint_signup_fullname">FULL NAME</string>
+    <string name="hint_signup_email">EMAIL ADDRESS</string>
+    <string name="hint_sognup_mo_no">MOBILE NUMBER</string>
+    <string name="hint_signup_password">CREATE PASSWORD</string>
+    <string name="hint_signup_conf_password">CONFIRM PASSWORD</string>
+    <string name="hint_enter_mobile">MOBILE NUMBER</string>
+    <string name="hint_enter_verification_code">VERIFICATION CODE</string>
+    <string name="status_canceled">CANCELED</string>
+    <string name="status_started">STARTED</string>
+    <string name="status_pending">PENDING</string>
+    <string name="drop">DROP</string>
+    <string name="pickup">PICKUP</string>
+    <string name="status_pause">PAUSE</string>
+    <string name="status_completed">COMPLETED</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="mytrp_todaytrip">Today\\\'s Trips</string>
+    <string name="toggle_splash">SPLASH</string>
+
 </resources>

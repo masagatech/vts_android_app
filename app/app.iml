@@ -21,6 +21,33 @@
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
       </configuration>
     </facet>
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.6" useProjectSettings="false">
+        <compilerSettings />
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/build/tmp/kotlin-classes/debug" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="app_debug" />
+          <option name="addCompilerBuiltIns" value="true" />
+          <option name="loadBuiltInsFromDependencies" value="true" />
+          <option name="languageVersion" value="1.2" />
+          <option name="apiVersion" value="1.2" />
+          <option name="pluginOptions">
+            <array>
+              <option value="plugin:org.jetbrains.kotlin.android:experimental=false" />
+              <option value="plugin:org.jetbrains.kotlin.android:enabled=true" />
+              <option value="plugin:org.jetbrains.kotlin.android:defaultCacheImplementation=hashMap" />
+            </array>
+          </option>
+          <option name="pluginClasspaths">
+            <array>
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.2.30/680ff8d567db8dec157cd9344f0a1d2b5e4d651b/kotlin-android-extensions-1.2.30.jar" />
+            </array>
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
     <output url="file://$MODULE_DIR$/build/intermediates/classes/debug" />
@@ -102,93 +129,128 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/splits-support" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/symbols" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/transforms" />
+      <excludeFolder url="file://$MODULE_DIR$/build/kotlin" />
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
-      <excludeFolder url="file://$MODULE_DIR$/build/reports" />
       <excludeFolder url="file://$MODULE_DIR$/build/tmp" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 27 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: com.octo.android.robospice:robospice-cache:1.4.14@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support.constraint:constraint-layout-solver:1.0.2@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.github.medyo:android-about-page-1.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: me.shaohui.advancedluban:library-1.3.5" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-v4-27.1.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.maps.android:android-maps-utils-0.4.4" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-core-16.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-auth-api-phone-15.0.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test.espresso:espresso-idling-resource-2.2.2" level="project" />
-    <orderEntry type="library" name="Gradle: android.arch.lifecycle:common:1.1.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-auth-base-15.0.1" level="project" />
     <orderEntry type="library" name="Gradle: org.java-websocket:Java-WebSocket:1.3.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-iid-12.0.1" level="project" />
     <orderEntry type="library" name="Gradle: com.crashlytics.sdk.android:crashlytics-core-2.6.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.jakewharton:butterknife-8.5.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test.espresso:espresso-core-2.2.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:recyclerview-v7-27.1.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup:javawriter:2.1.1@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:multidex-1.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.zxing:core:3.3.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.bumptech.glide:glide:3.6.1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: io.reactivex.rxjava2:rxjava:2.0.5@jar" level="project" />
     <orderEntry type="library" name="Gradle: org.osmdroid:osmdroid-android-6.0.1" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-media-compat-27.1.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-core-ui-27.1.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.borax12.materialdaterangepicker:library-1.9" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:rules-0.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-maps-license-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-tasks-license-12.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-login-4.35.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-measurement-base-15.0.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.melnykov:floatingactionbutton-1.3.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: javax.inject:javax.inject:1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-fragment-27.1.1" level="project" />
     <orderEntry type="library" name="Gradle: com.koushikdutta.ion:ion-2.2.1" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.core:runtime-1.1.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.3@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-common-12.0.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:runner-0.5" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design-27.1.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-iid-license-12.0.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:multidex-instrumentation-1.0.2" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:appcompat-v7-27.1.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-analytics-impl-license-12.0.1" level="project" />
     <orderEntry type="library" name="Gradle: com.crashlytics.sdk.android:beta-1.2.7" level="project" />
     <orderEntry type="library" name="Gradle: com.google.code.findbugs:jsr305:3.0.2@jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:exposed-instrumentation-api-publish-0.5" level="project" />
     <orderEntry type="library" name="Gradle: io.fabric.sdk.android:fabric-1.4.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-maps-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: joda-time:joda-time:2.9.9:no-tzdb@jar" level="project" />
+    <orderEntry type="library" name="Gradle: me.dm7.barcodescanner:core-1.9.8" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-tasks-15.0.1" level="project" />
     <orderEntry type="library" name="Gradle: com.getkeepsafe.relinker:relinker-1.2.2" level="project" />
     <orderEntry type="library" name="Gradle: com.github.PhilJay:MPAndroidChart:v3.0.2@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-messaging-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-analytics-impl-12.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:gridlayout-v7-27.1.1" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:runtime-1.1.0" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:transition-27.1.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.sothree.slidinguppanel:library-3.3.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.jakewharton:butterknife-annotations:8.5.1@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-annotations:27.1.1@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:animated-vector-drawable-27.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-lang3:3.3.2@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-compat-27.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-messaging-17.0.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: javax.annotation:javax.annotation-api:1.2@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-tasks-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-common-license-12.0.1" level="project" />
     <orderEntry type="library" name="Gradle: com.flipboard:bottomsheet-core-1.5.3" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:viewmodel-1.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.reactivestreams:reactive-streams:1.0.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.crashlytics.sdk.android:crashlytics-2.9.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.github.nkzawa:socket.io-client:0.3.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-analytics-license-12.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.parse.bolts:bolts-applinks:1.4.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: io.realm:realm-android-library-4.3.3" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-vector-drawable-27.1.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.koushikdutta.async:androidasync-2.2.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-core-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-base-license-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-basement-license-12.0.1" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-core-utils-27.1.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-basement-12.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-core-4.35.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-ads-identifier-15.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.nineoldandroids:library:2.4.0@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-stats-15.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-measurement-connector-impl-16.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: io.realm:android-adapters-2.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: io.realm:realm-annotations:4.3.3@jar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jre7:1.2.30@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.medyo:android-about-page-1.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.maps.android:android-maps-utils-0.4.4" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-basement-15.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: android.arch.lifecycle:common:1.1.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.chrisbanes.photoview:library-1.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:cardview-v7-27.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.jakewharton:butterknife-8.5.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test.espresso:espresso-core-2.2.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:recyclerview-v7-27.1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup:javawriter:2.1.1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.cloudinary:cloudinary-core:1.16.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:multidex-1.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.cloudinary:cloudinary-android-1.24.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-common-4.35.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-core-ui-27.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.borax12.materialdaterangepicker:library-1.9" level="project" />
+    <orderEntry type="library" name="Gradle: net.yazeed44.imagepicker:imagepicker-1.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.octo.android.robospice:robospice:1.4.14@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.3@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:runner-0.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.2.30@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-analytics-16.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:exposed-instrumentation-api-publish-0.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.shaishavgandhi:login-buttons-1.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: de.greenrobot:eventbus:2.4.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: joda-time:joda-time:2.9.9:no-tzdb@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.clans:fab-1.6.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.sothree.slidinguppanel:library-3.3.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.jakewharton:butterknife-annotations:8.5.1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.commonsware.cwac:cam2-0.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-annotations:27.1.1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.parse.bolts:bolts-android:1.4.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:animated-vector-drawable-27.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.parse.bolts:bolts-tasks:1.4.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-auth-15.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:customtabs-27.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: me.dm7.barcodescanner:zxing-1.9.8" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.nkzawa:socket.io-client:0.3.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-base-15.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.koushikdutta.async:androidasync-2.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: commons-io:commons-io:1.3.2@jar" level="project" />
+    <orderEntry type="library" name="Gradle: io.reactivex.rxjava2:rxandroid-2.0.1" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support.constraint:constraint-layout-1.0.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.12@jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-messaging-license-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-analytics-12.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-iid-16.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.github.nkzawa:engine.io-client:0.3.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: net.danlew:android.joda-2.9.9.1" level="project" />
-    <orderEntry type="library" name="Gradle: io.realm:android-adapters-2.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-iid-interop-16.0.0" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:livedata-core-1.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-measurement-connector-16.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-maps-15.0.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-integration:1.3@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-library:1.3@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-base-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: io.realm:realm-annotations:4.3.3@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-common-16.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.github.sundeepk:compact-calendar-view-2.0.2.2" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.core:common:1.1.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.evernote:android-job-1.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-analytics-impl-16.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.crashlytics.sdk.android:answers-1.4.1" level="project" />
     <orderEntry type="library" name="Gradle: android-android-27" level="project" />
   </component>

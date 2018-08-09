@@ -1,4 +1,4 @@
-package com.goyo.tracking.track;
+package com.goyo.tracking.tracking;
 
 import org.junit.Test;
 

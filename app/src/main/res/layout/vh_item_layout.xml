@@ -54,13 +54,14 @@
                 android:textColor="@color/about_github_color" />
 
             <TextView
-                android:id="@+id/subheader2"
+                android:id="@+id/txtregno"
                 style="@style/chat_row_subheader2"
                 android:textSize="11dp"
-                android:visibility="gone" />
+                android:visibility="visible" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/infopanel"
             android:layout_width="150dip"
             android:layout_height="match_parent"
             android:layout_marginEnd="5dip"
@@ -165,4 +166,5 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:visibility="gone" />
+
 </RelativeLayout>

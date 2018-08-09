@@ -103,4 +103,10 @@
         <item name="android:windowEnterAnimation">@anim/slide_up</item>
         <item name="android:windowExitAnimation">@anim/slide_down</item>
     </style>
+    <style name="MIP_theme" parent="AppTheme">
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
 </resources>
